@@ -1,15 +1,16 @@
-# StockSense IMS
+# React + Vite
 
-This project follows the supplied StockSense specification: HTML5 + Bootstrap 5 + Vanilla JavaScript frontend, Node.js + Express REST backend, MySQL database, authentication, dashboard KPIs, products, receipts, deliveries, transfers, adjustments and stock ledger. See the supplied specification for the full requirements. 
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Setup
-1. Install Node.js and MySQL.
-2. Run `database/schema.sql` in MySQL Workbench.
-3. Copy `.env.example` to `.env` and set DB_PASSWORD and JWT_SECRET.
-4. Run `npm install`.
-5. Run `npm start`.
-6. Open `http://localhost:5000/login.html`.
-7. Create an account and demonstrate: Receipt -> Transfer -> Delivery -> Adjustment -> Ledger.
+Currently, two official plugins are available:
 
-## Important
-Stock changes happen in backend MySQL transactions. Delivery/transfer operations reject insufficient stock. Dashboard values are loaded from REST APIs rather than hardcoded.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
