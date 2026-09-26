@@ -1,16 +1,72 @@
-# React + Vite
+# StockSense
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+StockSense is an inventory management web application built with React, Vite, and Supabase.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Inventory Tracking:** Real-time monitoring and management of stock items.
+- **Authentication & Backend:** User auth and PostgreSQL database integration powered by Supabase.
+- **Client-Side Routing:** Dynamic page navigation using React Router.
+- **In-App Notifications:** Lightweight toast alerts via React Hot Toast[cite: 1].
+- **Iconography:** UI icons provided by Phosphor Icons[cite: 1].
+- **Code Quality:** Fast linting configured with Oxlint[cite: 1].
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Framework:** React 19 (`react`, `react-dom`)[cite: 1]
+- **Build Tool:** Vite[cite: 1]
+- **Routing:** `react-router-dom`[cite: 1]
+- **Backend / Database Client:** `@supabase/supabase-js`[cite: 1]
+- **Toast Notifications:** `react-hot-toast`[cite: 1]
+- **Icons:** `@phosphor-icons/react`[cite: 1]
+- **Linter:** Oxlint[cite: 1]
+
+---
+
+## Project Structure
+
+```text
+stocksense/
+├── .env.example
+├── .gitignore
+├── .oxlintrc.json
+├── index.html
+├── package.json
+└── src/
+Getting Started
+Prerequisites
+Node.js (v18 or higher recommended)
+
+npm, pnpm, or yarn
+
+Installation
+Clone the repository:
+
+Bash
+git clone <repository-url>
+cd stocksense
+Install dependencies:
+
+Bash
+npm install
+Set up environment variables:
+
+Bash
+cp .env.example .env
+Add your Supabase credentials to .env:
+
+Code snippet
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+Available Scripts
+npm run dev — Starts the Vite development server with HMR[cite: 1].
+
+npm run build — Compiles and bundles production assets into dist/[cite: 1].
+
+npm run preview — Previews the production build locally[cite: 1].
+
+npm run lint — Runs Oxlint checks across the codebase[cite: 1].
